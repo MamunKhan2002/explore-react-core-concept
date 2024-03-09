@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import './App.css'
+import Counts from './Counts';
 
 function App() {
   const [count, setCount] = useState(0)
+
   function HandleBtn() {
     alert('Button Clicked')
   }
@@ -14,8 +16,10 @@ function App() {
 
     <>
       <h3>Explore React Core Concept:</h3>
-      <button onClick={HandleBtn}>Button</button>
+      <Counts></Counts>
+      {/* <button onClick={HandleBtn}>Button</button>
       <button onClick={() => HandleClick(3)}>Button-2</button>
+      <button onClick={() => alert('button-3 clicked')}>Button-3</button> */}
     </>
   )
 }
