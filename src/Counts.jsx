@@ -13,7 +13,7 @@ export default function Counts() {
     }
     // console.log(count, setCount);
     return (
-        <div>
+        <div className="box">
             <h3>Counter: {count}</h3>
             <button onClick={HandleAdd}>Add</button>
             <button onClick={HandleRemove}>Remove</button>
